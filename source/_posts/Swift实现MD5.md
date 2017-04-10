@@ -8,7 +8,6 @@ tags:
 - iOS
 categories: iOS
 description: 使用纯Swift语言来实现MD5计算
-
 ---
 
 ## 前言
@@ -264,7 +263,7 @@ extension String {
 
 ```
 
-## 使用：
+## 使用
 
 ```swift
 

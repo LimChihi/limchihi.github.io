@@ -23,7 +23,7 @@ description: 使用gogs搭建私人git仓库，并使用nginx反代理
 
 ## 安装
 
-## 配置Gogs所需的环境
+### 配置Gogs所需的环境
 
 安装nginx
 
@@ -61,6 +61,8 @@ FLUSH PRIVILEGES;
 QUIT；
 ```
 
+### 安装Gogs
+
 为Gogs创建单独的用户
 
 ```bash
@@ -79,7 +81,10 @@ wget https://dl.gogs.io/0.11.4/linux_amd64.zip
 unzip linux_amd64.zip
 ```
 
-## 配置与运行Gogs
+## 配置Gogs
+
+### 配置Service命令
+
 
 修改Gogs  service配置文件
 
@@ -112,7 +117,7 @@ sudo cp /home/git/gogs/scripts/init/debian/gogs /etc/init.d/
 sudo chmod +x /etc/init.d/gogs
 ```
 
-启动Gogs
+### 启动Gogs
 
 ```bash
 sudo service gogs start
